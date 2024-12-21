@@ -8,6 +8,8 @@
 
 import Foundation
 
+//Const NSMaxYEdge = 3
+//Const NSMinYEdge = 1
 enum Dimness {
     public static let maxStrength: Float = 0.9
     private static let fadeDuration = 2.5

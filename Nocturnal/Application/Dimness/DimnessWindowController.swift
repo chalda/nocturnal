@@ -13,16 +13,21 @@ class DimnessWindowController: NSWindowController {
 
     init(screen: NSScreen) {
         self.screen = screen
-        let window = NSWindow()
+        let window = NSWindow(contentRect: screen.frame,  styleMask: [.borderless],backing: .buffered, defer: false)
         window.setFrame(screen.frame, display: true)
         window.alphaValue = CGFloat(Dimness.strength)
         window.ignoresMouseEvents = true
-        window.backgroundColor = .black
-        window.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.overlayWindow)))
-        window.styleMask = [.borderless]
+        window.backgroundColor = .green
+//        window.contentBorderThickness(for: window.contentLayoutRect.)
+        window.constrainFrameRect(window.frame, to: screen)
+        window.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.screenSaverWindow)))
+      //  window.level = .mainMenu + 1
+
+        window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary, .ignoresCycle, .canJoinAllApplications]
+        window.orderFrontRegardless()
         window.setFrame(screen.frame, display: true)
-        window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
         super.init(window: window)
+
     }
 
     required convenience init(coder _: NSCoder) {

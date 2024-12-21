@@ -9,4 +9,4 @@
 #import "CBBlueLightClient.h"
 #import "TouchBarPrivateApi.h"
 #import <Cocoa/Cocoa.h>
-#import <MASShortcut/Shortcut.h>
+#import "Shortcut.h"

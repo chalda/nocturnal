@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DB0D0E52D3AAE63003FEC8A /* MASShortcut in Frameworks */ = {isa = PBXBuildFile; productRef = 2DB0D0E42D3AAE63003FEC8A /* MASShortcut */; };
+		2DB0D0E72D3AAF03003FEC8A /* MASShortcut in Frameworks */ = {isa = PBXBuildFile; productRef = 2DB0D0E62D3AAF03003FEC8A /* MASShortcut */; };
 		7D1B5C302395340E0061D0CF /* CustomTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B5C2F2395340E0061D0CF /* CustomTimeViewController.swift */; };
 		7D1B5C34239934440061D0CF /* Dimness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B5C33239934440061D0CF /* Dimness.swift */; };
 		7D1B5C372399AE770061D0CF /* NSWindow+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B5C362399AE770061D0CF /* NSWindow+Fade.swift */; };
@@ -21,8 +23,6 @@
 		7D87458B238BFB5A00A676F1 /* DimnessWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87458A238BFB5A00A676F1 /* DimnessWindowController.swift */; };
 		7D8F091A24AC7ECA003DA62E /* TouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F091924AC7ECA003DA62E /* TouchBar.swift */; };
 		7D980D8924B06B5F009FAF8B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D980D8824B06B5F009FAF8B /* AboutViewController.swift */; };
-		7D980D8B24B18D9B009FAF8B /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D980D8A24B18D9B009FAF8B /* MASShortcut.framework */; };
-		7D980D8C24B18D9B009FAF8B /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D980D8A24B18D9B009FAF8B /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DA0D20A248C9D8900F9C6A9 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA0D209248C9D8900F9C6A9 /* DFRFoundation.framework */; };
 		7DA0D20B248C9D8900F9C6A9 /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA0D209248C9D8900F9C6A9 /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DA5B1F4238BAC8000FE0597 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA5B1F3238BAC8000FE0597 /* MenuController.swift */; };
@@ -43,7 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7D980D8C24B18D9B009FAF8B /* MASShortcut.framework in Embed Frameworks */,
 				7DA0D20B248C9D8900F9C6A9 /* DFRFoundation.framework in Embed Frameworks */,
 				7D6EE5DD23A088FB0011D52C /* LaunchAtLogin.framework in Embed Frameworks */,
 			);
@@ -78,7 +77,6 @@
 		7D87458A238BFB5A00A676F1 /* DimnessWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimnessWindowController.swift; sourceTree = "<group>"; };
 		7D8F091924AC7ECA003DA62E /* TouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBar.swift; sourceTree = "<group>"; };
 		7D980D8824B06B5F009FAF8B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		7D980D8A24B18D9B009FAF8B /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = "<group>"; };
 		7DA0D205248C88E200F9C6A9 /* TouchBarPrivateApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBarPrivateApi.h; sourceTree = "<group>"; };
 		7DA0D209248C9D8900F9C6A9 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
 		7DA5B1F3238BAC8000FE0597 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -100,9 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB0D0E72D3AAF03003FEC8A /* MASShortcut in Frameworks */,
+				2DB0D0E52D3AAE63003FEC8A /* MASShortcut in Frameworks */,
 				7D6EE5DC23A088FB0011D52C /* LaunchAtLogin.framework in Frameworks */,
 				7DA0D20A248C9D8900F9C6A9 /* DFRFoundation.framework in Frameworks */,
-				7D980D8B24B18D9B009FAF8B /* MASShortcut.framework in Frameworks */,
 				7D6A1022235F300100BB75EB /* CoreBrightness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +112,6 @@
 		7D56898E235EFD7D00A51FC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D980D8A24B18D9B009FAF8B /* MASShortcut.framework */,
 				7DA0D209248C9D8900F9C6A9 /* DFRFoundation.framework */,
 				7D3E6F2623A0902700D88A16 /* LaunchAtLogin.framework.dSYM */,
 				7D6EE5DB23A088FB0011D52C /* LaunchAtLogin.framework */,
@@ -279,8 +277,9 @@
 		7DF1F9212356AFA90041E9CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "Joshua Jon";
 				TargetAttributes = {
 					7DF1F9282356AFAA0041E9CA = {
@@ -297,6 +296,9 @@
 				Base,
 			);
 			mainGroup = 7DF1F9202356AFA90041E9CA;
+			packageReferences = (
+				2DB0D0E32D3AAE63003FEC8A /* XCLocalSwiftPackageReference "../MASShortcut" */,
+			);
 			productRefGroup = 7DF1F92A2356AFAA0041E9CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -500,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -520,7 +522,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 28M363UQ4A;
+				DEVELOPMENT_TEAM = N345Y8X6BA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -539,7 +541,7 @@
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/CoreBrightness.framework/Versions/A",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshua.jon.Nocturnal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -559,7 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 28M363UQ4A;
+				DEVELOPMENT_TEAM = N345Y8X6BA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -578,7 +580,7 @@
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/CoreBrightness.framework/Versions/A",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshua.jon.Nocturnal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -610,6 +612,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		2DB0D0E32D3AAE63003FEC8A /* XCLocalSwiftPackageReference "../MASShortcut" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../MASShortcut;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DB0D0E42D3AAE63003FEC8A /* MASShortcut */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MASShortcut;
+		};
+		2DB0D0E62D3AAF03003FEC8A /* MASShortcut */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MASShortcut;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7DF1F9212356AFA90041E9CA /* Project object */;
 }
