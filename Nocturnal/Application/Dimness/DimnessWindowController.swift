@@ -17,7 +17,7 @@ class DimnessWindowController: NSWindowController {
         window.setFrame(screen.frame, display: true)
         window.alphaValue = CGFloat(Dimness.strength)
         window.ignoresMouseEvents = true
-        window.backgroundColor = .green
+        window.backgroundColor = .black
 //        window.contentBorderThickness(for: window.contentLayoutRect.)
         window.constrainFrameRect(window.frame, to: screen)
         window.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.screenSaverWindow)))
